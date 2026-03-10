@@ -154,11 +154,9 @@ h3 { font-size: 1.3rem; }
   height: 46px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 6px rgba(0,200,122,.2));
-  transition: filter var(--transition), transform var(--transition);
+  transition: transform var(--transition);
 }
 .logo:hover .logo-img {
-  filter: drop-shadow(0 0 12px rgba(0,200,122,.5));
   transform: scale(1.04);
 }
 .logo-jbc, .logo-studio { display: none; }
@@ -257,14 +255,9 @@ h3 { font-size: 1.3rem; }
 
 .hero-logo {
   width: 100%;
-  max-width: 380px;
+  max-width: 480px;
   height: auto;
   object-fit: contain;
-  border-radius: 20px;
-  border: 2px solid rgba(0,200,122,.18);
-  background: rgba(0,0,0,.3);
-  padding: 18px;
-  filter: drop-shadow(0 8px 40px rgba(0,200,122,.28));
 }
 
 .hero-tag {
@@ -962,7 +955,7 @@ value {
 
   .hero-content { grid-template-columns: 1fr; gap: 36px; }
   .hero-img-col { order: -1; }
-  .hero-logo { max-width: 220px; }
+  .hero-logo { max-width: 280px; }
   .hero-btns { flex-direction: column; gap: 12px; }
   .hero-stats { gap: 20px; }
 
