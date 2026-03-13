@@ -132,7 +132,7 @@ h3 { font-size: 1.3rem; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 0;
+  padding: 24px 0 0 0;
   padding-top: env(safe-area-inset-top, 0px);
   transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
 }
@@ -140,7 +140,7 @@ h3 { font-size: 1.3rem; }
   background: rgba(8,14,20,.95);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--clr-border), 0 4px 30px rgba(0,0,0,.4);
-  padding: 0;
+  padding: 18px 0 0 0;
   padding-top: env(safe-area-inset-top, 0px);
 }
 
@@ -148,13 +148,13 @@ h3 { font-size: 1.3rem; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 96px;
   min-height: 0;
 }
 
 .logo { display: flex; align-items: center; }
 .logo-img {
-  height: 46px;
+  height: 90px;
   width: auto;
   object-fit: contain;
   transition: transform var(--transition);
@@ -258,9 +258,12 @@ h3 { font-size: 1.3rem; }
 
 .hero-logo {
   width: 100%;
-  max-width: 480px;
+  max-width: 850px;
   height: auto;
   object-fit: contain;
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
 }
 
 .hero-tag {
@@ -755,6 +758,9 @@ value {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
   color: var(--clr-primary);
 }
 .contact-icon svg { width: 20px; height: 20px; }
